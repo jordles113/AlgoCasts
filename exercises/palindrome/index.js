@@ -7,6 +7,19 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+ let pal = str.split('').reverse().join('')
+//  if (pal === str) return true  // my code
+return str === pal //his syntax both work 
+}
 
+
+//SECOND OPTION - makes use of every() array helper
+//not an ideal situation because you have to do more checks then necessary-- double comparison 
+
+const palindrome2 = (str) => {
+    return str.split('').every((char, i) => {
+        return char === str[str.length - i - 1] 
+    })
+}
 module.exports = palindrome;
