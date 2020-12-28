@@ -8,9 +8,9 @@
 
 // SOLUTION 1 -- using built in methods -- my solution
 
-// function reverse(str) {
-//     return str.split('').reverse().join('');
-// }
+function reverse(str) {
+    return str.split('').reverse().join('');
+}
 
 // SOLUTION 2 -- For Loop
 
